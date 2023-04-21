@@ -1,0 +1,310 @@
+{"type":["init_ps"],"time":["2022-11-15 10:44:33"],"user":["Sina Hafner"],"umph":[1668505473.421],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:44:33"],"user":["Sina Hafner"],"umph":[1668505473.4693],"ok":[true],"chunk":[1],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\n365 * 24"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:44:33"],"user":["Sina Hafner"],"umph":[1668505473.4896],"ok":[true],"chunk":[2],"ex":[1],"e.ind":[0],"code":["a <- 11*13\na"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:44:33"],"user":["Sina Hafner"],"umph":[1668505473.5069],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\nb <- 2^10\n\n# enter your code here ...\nb"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:44:33"],"user":["Sina Hafner"],"umph":[1668505473.5262],"ok":[true],"chunk":[4],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\nx <- a+b\n\n# enter your code here ...\nx"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:44:33"],"user":["Sina Hafner"],"umph":[1668505473.5438],"ok":[true],"chunk":[5],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\nw <- sqrt(123456789)\n\n# enter your code here ...\nw"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:44:33"],"user":["Sina Hafner"],"umph":[1668505473.5619],"ok":[true],"chunk":[6],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\nabs(-13^3)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:44:33"],"user":["Sina Hafner"],"umph":[1668505473.575],"ok":[true],"chunk":[7],"ex":[1],"e.ind":[0],"code":["(0.1 + 0.2 - 0.3)*10000000000000000000"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:44:33"],"user":["Sina Hafner"],"umph":[1668505473.5916],"ok":[true],"chunk":[8],"ex":[2],"e.ind":[0],"code":["v <- c(45,-6,0,2)\nv\nu <- 2:8\nu"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:44:33"],"user":["Sina Hafner"],"umph":[1668505473.6153],"ok":[true],"chunk":[9],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nx <- c(0:10)\n\n# enter your code here ...\nx"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:44:33"],"user":["Sina Hafner"],"umph":[1668505473.6262],"ok":[true],"chunk":[10],"ex":[2],"e.ind":[0],"code":["10+x\nx*x"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:44:33"],"user":["Sina Hafner"],"umph":[1668505473.6448],"ok":[true],"chunk":[11],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\n2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:44:33"],"user":["Sina Hafner"],"umph":[1668505473.6686],"ok":[true],"chunk":[12],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\ny <- x^3\n\n# enter your code here ...\ny"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:44:33"],"user":["Sina Hafner"],"umph":[1668505473.6903],"ok":[true],"chunk":[13],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nr <- replicate(11, 3.14)\n\n# enter your code here ...\nr"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:44:34"],"user":["Sina Hafner"],"umph":[1668505474.0061],"ok":[true],"chunk":[14],"ex":[2],"e.ind":[0],"code":["library(ggplot2)\nqplot(x,y)\nqplot(x,r)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:44:34"],"user":["Sina Hafner"],"umph":[1668505474.025],"ok":[false],"chunk":[15],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\nseq(-1, 1, 0.1)"],"message":["\nYou have not yet made an assignment to x in chunk 2_e."]}
+,
+{"type":["hint"],"time":["2022-11-15 10:45:15"],"user":["Sina Hafner"],"umph":[1668505515.1875],"ok":[true],"chunk":[15],"ex":[2],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-15 10:45:40"],"user":["Sina Hafner"],"umph":[1668505540.3563],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:45:40"],"user":["Sina Hafner"],"umph":[1668505540.3741],"ok":[true],"chunk":[15],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nx <- seq(-1, 1, 0.1)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:45:40"],"user":["Sina Hafner"],"umph":[1668505540.4729],"ok":[true],"chunk":[16],"ex":[2],"e.ind":[0],"code":["\n# Berechnen von y\ny <- x^3\n\n# Plotten von x und y mit dem Befehl qplot\nqplot(x,y)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:45:40"],"user":["Sina Hafner"],"umph":[1668505540.4812],"ok":[true],"chunk":[17],"ex":[2],"e.ind":[0],"code":["namen <- c(\"Anna\",\"Bob\",\"Clara\",\"Dora\",\"Emil\")\nnamen"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:45:40"],"user":["Sina Hafner"],"umph":[1668505540.4912],"ok":[true],"chunk":[18],"ex":[2],"e.ind":[0],"code":["text <- c(\"3\",\"1\",\"0\",\"0\",\"34\",\"-2\",\"0\",\"17\")\ntext"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:45:40"],"user":["Sina Hafner"],"umph":[1668505540.5158],"ok":[true],"chunk":[19],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nclass(text)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:45:40"],"user":["Sina Hafner"],"umph":[1668505540.5266],"ok":[true],"chunk":[20],"ex":[2],"e.ind":[0],"code":["as.character()\nas.numeric()\nas.logical()"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:45:40"],"user":["Sina Hafner"],"umph":[1668505540.5434],"ok":[true],"chunk":[21],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\ntext_num <- as.numeric(text)\n\n# enter your code here ...\ntext_num"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:45:40"],"user":["Sina Hafner"],"umph":[1668505540.558],"ok":[true],"chunk":[22],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nlength(names)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:45:40"],"user":["Sina Hafner"],"umph":[1668505540.5695],"ok":[true],"chunk":[23],"ex":[2],"e.ind":[0],"code":["namen[3] # Selektiere 3. Element\nnamen[2:4] # Selektiere Elemente 2,3 und 4\nnamen[c(5,1)] # Selektiere Element 5 und 1 in dieser Reihenfolge"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:45:40"],"user":["Sina Hafner"],"umph":[1668505540.5822],"ok":[false],"chunk":[24],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_i_2."]}
+,
+{"type":["check_ps"],"time":["2022-11-15 10:48:31"],"user":["Sina Hafner"],"umph":[1668505711.3352],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:48:31"],"user":["Sina Hafner"],"umph":[1668505711.3518],"ok":[true],"chunk":[24],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nnamen[c(2,4,5)]"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:48:31"],"user":["Sina Hafner"],"umph":[1668505711.3615],"ok":[true],"chunk":[25],"ex":[2],"e.ind":[0],"code":["namen[6] = \"Felix\"\nnamen\nnamen[1:2] = c(\"Alex\",\"Ben\")\nnamen"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:48:31"],"user":["Sina Hafner"],"umph":[1668505711.3757],"ok":[true],"chunk":[26],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\n3"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:48:31"],"user":["Sina Hafner"],"umph":[1668505711.3921],"ok":[true],"chunk":[27],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\n1"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:48:31"],"user":["Sina Hafner"],"umph":[1668505711.4244],"ok":[true],"chunk":[28],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\n4"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:48:31"],"user":["Sina Hafner"],"umph":[1668505711.4461],"ok":[true],"chunk":[29],"ex":[3],"e.ind":[0],"code":["dataframe <- data.frame(Variable1=c(22,27,20,28,26), Variable2=seq(0,8,2), Variable3 = \"Uni\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 10:48:31"],"user":["Sina Hafner"],"umph":[1668505711.4653],"ok":[false],"chunk":[30],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to z in chunk 3_a."]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:05:44"],"user":["Sina Hafner"],"umph":[1668506744.1716],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:05:44"],"user":["Sina Hafner"],"umph":[1668506744.1926],"ok":[false],"chunk":[30],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nDataframe <- data.frame(Land = c(\"Brasilien\", \"Deutschland\", \"Frankreich\", \"Mexiko\", \"Suedkorea\"), Kontinent = c(\"Am\", \"Eur\", \"Eur\", \"Am\", \"As\"), Jahr = c(2018), BIP = c(2.14, 4.21, 2.93, 1.21, 1.69), ID = c(1,2,3,4,5))\n\n# enter your code here ...\nDataframe"],"message":["\nYou have not yet made an assignment to z in chunk 3_a."]}
+,
+{"type":["hint"],"time":["2022-11-15 11:06:46"],"user":["Sina Hafner"],"umph":[1668506806.3992],"ok":[true],"chunk":[30],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:08:00"],"user":["Sina Hafner"],"umph":[1668506880.3977],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:08:00"],"user":["Sina Hafner"],"umph":[1668506880.4168],"ok":[false],"chunk":[30],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nDataframe <- data.frame(Land = c(\"Brasilien\",\"Deutschland\",\"Frankreich\",\"Mexiko\",\"Suedkorea\"), Kontinent = c(\"Am\",\"Eur\",\"Eur\",\"Am\",\"As\"), Jahr = c(2018), BIP = c(2.14, 4.21,2.93,1.21,1.69), ID = c(1,2,3,4,5))\n\n# enter your code here ...\nDataframe"],"message":["\nYou have not yet made an assignment to z in chunk 3_a."]}
+,
+{"type":["hint"],"time":["2022-11-15 11:08:05"],"user":["Sina Hafner"],"umph":[1668506885.6861],"ok":[true],"chunk":[30],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:08:46"],"user":["Sina Hafner"],"umph":[1668506926.6952],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:08:46"],"user":["Sina Hafner"],"umph":[1668506926.7157],"ok":[false],"chunk":[30],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nDataframe <- data.frame(Land = c(\"Brasilien\",\"Deutschland\",\"Frankreich\",\"Mexiko\",\"Suedkorea\"),Kontinent = c(\"Am\",\"Eur\",\"Eur\",\"Am\",\"As\"),Jahr = c(2018),BIP = c(2.14, 4.21,2.93,1.21,1.69),ID = c(1,2,3,4,5))\n\n# enter your code here ...\nDataframe"],"message":["\nYou have not yet made an assignment to z in chunk 3_a."]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:09:11"],"user":["Sina Hafner"],"umph":[1668506951.5205],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:09:11"],"user":["Sina Hafner"],"umph":[1668506951.5392],"ok":[false],"chunk":[30],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nDataframe <- data.frame(Land =c(\"Brasilien\",\"Deutschland\",\"Frankreich\",\"Mexiko\",\"Suedkorea\"),Kontinent =c(\"Am\",\"Eur\",\"Eur\",\"Am\",\"As\"),Jahr =c(2018),BIP =c(2.14, 4.21,2.93,1.21,1.69),ID =c(1,2,3,4,5))\n\n# enter your code here ...\nDataframe"],"message":["\nYou have not yet made an assignment to z in chunk 3_a."]}
+,
+{"type":["hint"],"time":["2022-11-15 11:09:14"],"user":["Sina Hafner"],"umph":[1668506954.751],"ok":[true],"chunk":[30],"ex":[3],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2022-11-15 11:10:05"],"user":["Sina Hafner"],"umph":[1668507005.3579],"ok":[true],"chunk":[30],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:10:35"],"user":["Sina Hafner"],"umph":[1668507035.707],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:10:35"],"user":["Sina Hafner"],"umph":[1668507035.7454],"ok":[false],"chunk":[30],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nDataframe <- data.frame(Land=c(\"Brasilien\",\"Deutschland\",\"Frankreich\",\"Mexiko\",\"Suedkorea\"),Kontinent=c(\"Am\",\"Eur\",\"Eur\",\"Am\",\"As\"),Jahr=c(2018),BIP=c(2.14, 4.21,2.93,1.21,1.69),ID=c(1,2,3,4,5))\n\n# enter your code here ...\nDataframe"],"message":["\nYou have not yet made an assignment to z in chunk 3_a."]}
+,
+{"type":["hint"],"time":["2022-11-15 11:10:47"],"user":["Sina Hafner"],"umph":[1668507047.2054],"ok":[true],"chunk":[30],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:12:07"],"user":["Sina Hafner"],"umph":[1668507127.5737],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:12:07"],"user":["Sina Hafner"],"umph":[1668507127.5972],"ok":[true],"chunk":[30],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nz <- data.frame(Land=c(\"Brasilien\",\"Deutschland\",\"Frankreich\",\"Mexiko\",\"Suedkorea\"),Kontinent=c(\"Am\",\"Eur\",\"Eur\",\"Am\",\"As\"),Jahr=c(2018),BIP=c(2.14, 4.21,2.93,1.21,1.69),ID=c(1,2,3,4,5))\n\n# enter your code here ...\nz"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:12:07"],"user":["Sina Hafner"],"umph":[1668507127.6408],"ok":[true],"chunk":[31],"ex":[3],"e.ind":[0],"code":["elec <- read.csv(\"data/Electricity.csv\", header = TRUE, dec = \".\", sep = \",\", stringsAsFactors = FALSE)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:12:08"],"user":["Sina Hafner"],"umph":[1668507128.6035],"ok":[false],"chunk":[32],"ex":[3],"e.ind":[2],"code":["\n# enter your code here ...\ndat <- read.csv(\"data/eu_macro_2017.csv\", header = TRUE, dec = \".\", sep = \",\")\n\n# enter your code here ...\ndat"],"message":["\nYou have not yet entered all correct commands in chunk 3_b."]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:12:49"],"user":["Sina Hafner"],"umph":[1668507169.2649],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:12:49"],"user":["Sina Hafner"],"umph":[1668507169.4383],"ok":[false],"chunk":[32],"ex":[3],"e.ind":[2],"code":["\n# enter your code here ...\ndat <- read.csv(\"data/eu_macro_2017.csv\", header = TRUE, dec = \".\", sep = \",\")\n\n# enter your code here ...\ndat"],"message":["\nYou have not yet entered all correct commands in chunk 3_b."]}
+,
+{"type":["hint"],"time":["2022-11-15 11:12:54"],"user":["Sina Hafner"],"umph":[1668507174.719],"ok":[true],"chunk":[32],"ex":[3],"e.ind":[2]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:13:10"],"user":["Sina Hafner"],"umph":[1668507190.2421],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:13:10"],"user":["Sina Hafner"],"umph":[1668507190.44],"ok":[false],"chunk":[32],"ex":[3],"e.ind":[2],"code":["\n# enter your code here ...\ndat <- read.csv(\"data/eu_macro_2017.csv\", head = TRUE, dec = \".\", sep = \",\")\n\n# enter your code here ...\ndat"],"message":["\nYou have not yet entered all correct commands in chunk 3_b."]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:13:40"],"user":["Sina Hafner"],"umph":[1668507220.9439],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:13:41"],"user":["Sina Hafner"],"umph":[1668507221.1171],"ok":[false],"chunk":[32],"ex":[3],"e.ind":[2],"code":["\n# enter your code here ...\ndat <- read.csv(\"data/eu_macro_2017.csv\", header =TRUE, dec = \".\", sep = \",\")\n\n# enter your code here ...\ndat"],"message":["\nYou have not yet entered all correct commands in chunk 3_b."]}
+,
+{"type":["hint"],"time":["2022-11-15 11:13:44"],"user":["Sina Hafner"],"umph":[1668507224.4468],"ok":[true],"chunk":[32],"ex":[3],"e.ind":[2]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:14:10"],"user":["Sina Hafner"],"umph":[1668507250.6923],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:14:10"],"user":["Sina Hafner"],"umph":[1668507250.8654],"ok":[true],"chunk":[32],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\ndat <- read.csv(\"data/eu_macro_2017.csv\", header =TRUE, dec = \".\", sep = \",\")\n\n# enter your code here ...\nhead(dat, 8)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:14:10"],"user":["Sina Hafner"],"umph":[1668507250.8885],"ok":[false],"chunk":[33],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nn <- nrow(\"country\")\n\n# enter your code here ...\nn"],"message":["\nYou have not made a correct assignment to n in chunk 3_c."]}
+,
+{"type":["hint"],"time":["2022-11-15 11:14:37"],"user":["Sina Hafner"],"umph":[1668507277.3022],"ok":[true],"chunk":[33],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:14:57"],"user":["Sina Hafner"],"umph":[1668507297.4624],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:14:57"],"user":["Sina Hafner"],"umph":[1668507297.4794],"ok":[false],"chunk":[34],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to d in chunk 3_d."]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:15:32"],"user":["Sina Hafner"],"umph":[1668507332.8388],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:15:32"],"user":["Sina Hafner"],"umph":[1668507332.8615],"ok":[false],"chunk":[34],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nhead(dat, 3)"],"message":["\nYou have not yet made an assignment to d in chunk 3_d."]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:16:34"],"user":["Sina Hafner"],"umph":[1668507394.4972],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:16:34"],"user":["Sina Hafner"],"umph":[1668507394.5196],"ok":[true],"chunk":[34],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nd <- head(dat, 3)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:16:34"],"user":["Sina Hafner"],"umph":[1668507394.5353],"ok":[true],"chunk":[35],"ex":[3],"e.ind":[0],"code":["d[,1]\nd[,\"cntry\"]\n\nd[[\"cntry\"]]\nd[[1]]\nd$cntry"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:16:34"],"user":["Sina Hafner"],"umph":[1668507394.5559],"ok":[true],"chunk":[36],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\np <- dat$pop"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:16:34"],"user":["Sina Hafner"],"umph":[1668507394.5709],"ok":[false],"chunk":[37],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 3_f."]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:17:11"],"user":["Sina Hafner"],"umph":[1668507431.777],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:17:11"],"user":["Sina Hafner"],"umph":[1668507431.7944],"ok":[true],"chunk":[37],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nsum(p)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:17:11"],"user":["Sina Hafner"],"umph":[1668507431.81],"ok":[false],"chunk":[38],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 3_f_2."]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:19:25"],"user":["Sina Hafner"],"umph":[1668507565.0641],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:19:25"],"user":["Sina Hafner"],"umph":[1668507565.0849],"ok":[true],"chunk":[38],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nmean(p)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:19:25"],"user":["Sina Hafner"],"umph":[1668507565.0992],"ok":[true],"chunk":[39],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nmax(p)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:19:25"],"user":["Sina Hafner"],"umph":[1668507565.1112],"ok":[false],"chunk":[40],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nmax(p) - min(p)"],"message":["\nYou have not yet entered all correct commands in chunk 3_f_4."]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:20:36"],"user":["Sina Hafner"],"umph":[1668507636.532],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:20:36"],"user":["Sina Hafner"],"umph":[1668507636.5497],"ok":[false],"chunk":[40],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n(max(p) - min(p))/ min(p)"],"message":["\nYou have not yet entered all correct commands in chunk 3_f_4."]}
+,
+{"type":["hint"],"time":["2022-11-15 11:20:49"],"user":["Sina Hafner"],"umph":[1668507649.0619],"ok":[true],"chunk":[40],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:21:05"],"user":["Sina Hafner"],"umph":[1668507665.7805],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:21:05"],"user":["Sina Hafner"],"umph":[1668507665.7964],"ok":[false],"chunk":[40],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n(max(p) / min(p))"],"message":["\nOk, in chunk 3_f_4 your command\n\n    (max(p)/min(p))\n\nindeed yields the correct result. But you shall directly use the function '/', by just writing \n\n    max(p)/min(p)\n\nPlease change your code."]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:21:22"],"user":["Sina Hafner"],"umph":[1668507682.3928],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:21:22"],"user":["Sina Hafner"],"umph":[1668507682.4216],"ok":[true],"chunk":[40],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nmax(p) / min(p)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:21:22"],"user":["Sina Hafner"],"umph":[1668507682.4368],"ok":[true],"chunk":[41],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nsummary(p)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:21:22"],"user":["Sina Hafner"],"umph":[1668507682.4568],"ok":[true],"chunk":[42],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nsummary(dat)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:21:22"],"user":["Sina Hafner"],"umph":[1668507682.7562],"ok":[true],"chunk":[43],"ex":[4],"e.ind":[0],"code":["z <- data.frame(Land=c(\"Brasilien\",\"Deutschland\",\"Frankreich\",\"Mexiko\",\"Suedkorea\"), Kontinent=c(\"Am\",\"Eur\", \"Eur\",\"Am\",\"As\"), Jahr=2018, BIP=c(2.14,4.21,2.93,1.21,1.69), ID=1:5)\n\ndat <- read_csv(\"./data/eu_macro_2017.csv\")\np <- dat$pop"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:21:22"],"user":["Sina Hafner"],"umph":[1668507682.7757],"ok":[true],"chunk":[44],"ex":[4],"e.ind":[0],"code":["# Weise den Ländercode als Namen zu\nnames(p) <- dat$cntry\n\n# Namen sind hilfreich beim lesen\np[c(1,7,28)] \n\n# Man kann dann auch Elemente per Namen auswählen\np[\"DEU\"] "],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:21:22"],"user":["Sina Hafner"],"umph":[1668507682.7913],"ok":[false],"chunk":[45],"ex":[4],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to pop_share in chunk 4_a_2."]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:24:00"],"user":["Sina Hafner"],"umph":[1668507840.8309],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:24:00"],"user":["Sina Hafner"],"umph":[1668507840.8478],"ok":[true],"chunk":[45],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\npop_share <- dat$pop / sum(dat$pop)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:24:00"],"user":["Sina Hafner"],"umph":[1668507840.8588],"ok":[false],"chunk":[46],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\ndat$pop[DEU]"],"message":["evaluation error in \n  dat$pop[DEU]\n  Error:  object 'DEU' not found\n"]}
+,
+{"type":["hint"],"time":["2022-11-15 11:25:28"],"user":["Sina Hafner"],"umph":[1668507928.5486],"ok":[true],"chunk":[46],"ex":[4],"e.ind":[0]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:26:07"],"user":["Sina Hafner"],"umph":[1668507967.4301],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:26:07"],"user":["Sina Hafner"],"umph":[1668507967.4515],"ok":[true],"chunk":[46],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\npop_share[\"DEU\"]"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:26:07"],"user":["Sina Hafner"],"umph":[1668507967.4627],"ok":[true],"chunk":[47],"ex":[4],"e.ind":[0],"code":["df <- data.frame(Filiale=1:7, Mitarbeiter=c(3,5,4,4,3,5,3), Umsatz=c(19856,17008,31220,24450,28132,28063,20524))\nhead(df,3)\nlapply(df,sum)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:26:07"],"user":["Sina Hafner"],"umph":[1668507967.4728],"ok":[true],"chunk":[48],"ex":[4],"e.ind":[0],"code":["tapply(df$Umsatz,df$Mitarbeiter,sum)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:26:07"],"user":["Sina Hafner"],"umph":[1668507967.4859],"ok":[false],"chunk":[49],"ex":[4],"e.ind":[1],"code":["\n# enter your code here ...\n\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to z_mean in chunk 4_b_3."]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:28:33"],"user":["Sina Hafner"],"umph":[1668508113.6689],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:28:33"],"user":["Sina Hafner"],"umph":[1668508113.7018],"ok":[false],"chunk":[49],"ex":[4],"e.ind":[1],"code":["\n# enter your code here ...\nz_mean <- mean(z$Land, z$Kontinent, z$Jahr, z$BIP, z$ID)\n\n# enter your code here ...\nz_mean"],"message":["\nYou have not made a correct assignment to z_mean in chunk 4_b_3."]}
+,
+{"type":["hint"],"time":["2022-11-15 11:28:37"],"user":["Sina Hafner"],"umph":[1668508117.5409],"ok":[true],"chunk":[49],"ex":[4],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:29:31"],"user":["Sina Hafner"],"umph":[1668508171.2463],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:29:31"],"user":["Sina Hafner"],"umph":[1668508171.2663],"ok":[false],"chunk":[49],"ex":[4],"e.ind":[1],"code":["\n# enter your code here ...\nz_mean <- lapply(z$Land, z$Kontinent, z$Jahr, z$BIP, z$ID, mean)\n\n# enter your code here ...\nz_mean"],"message":["\nYou have not made a correct assignment to z_mean in chunk 4_b_3."]}
+,
+{"type":["hint"],"time":["2022-11-15 11:29:33"],"user":["Sina Hafner"],"umph":[1668508173.7322],"ok":[true],"chunk":[49],"ex":[4],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2022-11-15 11:30:15"],"user":["Sina Hafner"],"umph":[1668508215.1395],"ok":[true],"chunk":[49],"ex":[4],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:30:45"],"user":["Sina Hafner"],"umph":[1668508245.4109],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:30:45"],"user":["Sina Hafner"],"umph":[1668508245.4343],"ok":[true],"chunk":[49],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\nz_mean <- lapply(z, mean)\n\n# enter your code here ...\nz_mean"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:30:45"],"user":["Sina Hafner"],"umph":[1668508245.4471],"ok":[false],"chunk":[50],"ex":[4],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 4_c."]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:32:17"],"user":["Sina Hafner"],"umph":[1668508337.3212],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:32:17"],"user":["Sina Hafner"],"umph":[1668508337.3453],"ok":[false],"chunk":[50],"ex":[4],"e.ind":[1],"code":["\n# enter your code here ...\ntapply(z$Kontinent, z$BIP, min)"],"message":["\nYou have not yet entered all correct commands in chunk 4_c."]}
+,
+{"type":["hint"],"time":["2022-11-15 11:32:26"],"user":["Sina Hafner"],"umph":[1668508346.7155],"ok":[true],"chunk":[50],"ex":[4],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:34:56"],"user":["Sina Hafner"],"umph":[1668508496.0494],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:34:56"],"user":["Sina Hafner"],"umph":[1668508496.1258],"ok":[true],"chunk":[51],"ex":[4],"e.ind":[0],"code":["dat$pop_share <- pop_share\nhead(dat) # Zeigt per Default die 6 ersten Zeilen"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:34:56"],"user":["Sina Hafner"],"umph":[1668508496.1389],"ok":[true],"chunk":[52],"ex":[4],"e.ind":[0],"code":["dat$pop_share <- dat$pop / sum(dat$pop) "],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:34:56"],"user":["Sina Hafner"],"umph":[1668508496.1514],"ok":[false],"chunk":[53],"ex":[4],"e.ind":[1],"code":["\n# enter your code here ...\n\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to dat$gdp_share in chunk 4_e."]}
+,
+{"type":["hint"],"time":["2022-11-15 11:36:10"],"user":["Sina Hafner"],"umph":[1668508570.0746],"ok":[true],"chunk":[53],"ex":[4],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:37:57"],"user":["Sina Hafner"],"umph":[1668508677.6539],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:37:57"],"user":["Sina Hafner"],"umph":[1668508677.6764],"ok":[false],"chunk":[53],"ex":[4],"e.ind":[2],"code":["\n# enter your code here ...\ndat$gdp_share <- dat$gdp / sum(dat$gdp) \n\n# enter your code here ...\nhead(dat$gdp_share, 6)"],"message":["\nYou have not yet entered all correct commands in chunk 4_e."]}
+,
+{"type":["hint"],"time":["2022-11-15 11:38:01"],"user":["Sina Hafner"],"umph":[1668508681.4273],"ok":[true],"chunk":[53],"ex":[4],"e.ind":[2]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:38:24"],"user":["Sina Hafner"],"umph":[1668508704.7554],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:38:24"],"user":["Sina Hafner"],"umph":[1668508704.8126],"ok":[true],"chunk":[53],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\ndat$gdp_share <- dat$gdp / sum(dat$gdp) \n\n# enter your code here ...\nhead(dat, 6)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:38:24"],"user":["Sina Hafner"],"umph":[1668508704.8422],"ok":[false],"chunk":[33],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nn <- nrow(\"country\")\n\n# enter your code here ...\nn"],"message":["\nYou have not made a correct assignment to n in chunk 3_c."]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:39:14"],"user":["Sina Hafner"],"umph":[1668508754.3061],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:39:14"],"user":["Sina Hafner"],"umph":[1668508754.3248],"ok":[false],"chunk":[33],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nn <- nrow(\"country\")\n\n# enter your code here ...\nn"],"message":["\nYou have not made a correct assignment to n in chunk 3_c."]}
+,
+{"type":["hint"],"time":["2022-11-15 11:39:18"],"user":["Sina Hafner"],"umph":[1668508758.0255],"ok":[true],"chunk":[33],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:39:38"],"user":["Sina Hafner"],"umph":[1668508778.8998],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:39:38"],"user":["Sina Hafner"],"umph":[1668508778.9197],"ok":[false],"chunk":[33],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nn <- nrow(\"dat\")\n\n# enter your code here ...\nn"],"message":["\nYou have not made a correct assignment to n in chunk 3_c."]}
+,
+{"type":["hint"],"time":["2022-11-15 11:39:43"],"user":["Sina Hafner"],"umph":[1668508783.5295],"ok":[true],"chunk":[33],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:40:33"],"user":["Sina Hafner"],"umph":[1668508833.3378],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:40:33"],"user":["Sina Hafner"],"umph":[1668508833.3599],"ok":[true],"chunk":[33],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nn <- nrow(dat)\n\n# enter your code here ...\nn"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:40:33"],"user":["Sina Hafner"],"umph":[1668508833.3789],"ok":[true],"chunk":[34],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nd <- head(dat, 3)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:40:33"],"user":["Sina Hafner"],"umph":[1668508833.3887],"ok":[true],"chunk":[35],"ex":[3],"e.ind":[0],"code":["d[,1]\nd[,\"cntry\"]\n\nd[[\"cntry\"]]\nd[[1]]\nd$cntry"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:40:33"],"user":["Sina Hafner"],"umph":[1668508833.4017],"ok":[true],"chunk":[36],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\np <- dat$pop"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:40:33"],"user":["Sina Hafner"],"umph":[1668508833.413],"ok":[true],"chunk":[37],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nsum(p)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:40:33"],"user":["Sina Hafner"],"umph":[1668508833.4239],"ok":[true],"chunk":[38],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nmean(p)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:40:33"],"user":["Sina Hafner"],"umph":[1668508833.4338],"ok":[true],"chunk":[39],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nmax(p)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:40:33"],"user":["Sina Hafner"],"umph":[1668508833.4527],"ok":[true],"chunk":[40],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nmax(p) / min(p)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:40:33"],"user":["Sina Hafner"],"umph":[1668508833.4674],"ok":[true],"chunk":[41],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nsummary(p)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:40:33"],"user":["Sina Hafner"],"umph":[1668508833.4835],"ok":[true],"chunk":[42],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nsummary(dat)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:40:33"],"user":["Sina Hafner"],"umph":[1668508833.5013],"ok":[false],"chunk":[50],"ex":[4],"e.ind":[1],"code":["\n# enter your code here ...\ntapply(z$Kontinent, z$BIP, min)"],"message":["\nYou have not yet entered all correct commands in chunk 4_c."]}
+,
+{"type":["hint"],"time":["2022-11-15 11:41:02"],"user":["Sina Hafner"],"umph":[1668508862.3536],"ok":[true],"chunk":[50],"ex":[4],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:42:16"],"user":["Sina Hafner"],"umph":[1668508936.5472],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:42:16"],"user":["Sina Hafner"],"umph":[1668508936.5655],"ok":[false],"chunk":[50],"ex":[4],"e.ind":[1],"code":["\n# enter your code here ...\ntapply(z$Kontinent, z$BIP, min)"],"message":["\nYou have not yet entered all correct commands in chunk 4_c."]}
+,
+{"type":["hint"],"time":["2022-11-15 11:42:21"],"user":["Sina Hafner"],"umph":[1668508941.6333],"ok":[true],"chunk":[50],"ex":[4],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2022-11-15 11:42:25"],"user":["Sina Hafner"],"umph":[1668508945.1373],"ok":[true],"chunk":[50],"ex":[4],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2022-11-15 11:48:35"],"user":["Sina Hafner"],"umph":[1668509315.4873],"ok":[true],"chunk":[50],"ex":[4],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:49:07"],"user":["Sina Hafner"],"umph":[1668509347.4996],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-15 11:49:07"],"user":["Sina Hafner"],"umph":[1668509347.5436],"ok":[false],"chunk":[50],"ex":[4],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 4_c."]}
+,
+{"type":["check_ps"],"time":["2022-11-15 11:51:12"],"user":["Sina Hafner"],"umph":[1668509472.7442],"ok":[true]}
+,

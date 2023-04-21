@@ -1,7 +1,7 @@
 
 ```{r 'check_ps', include=FALSE}
 
-user.name = 'ENTER A USER NAME HERE'
+user.name = 'Sina Hafner'
 ```
 
 # RTutor Übungsblatt 1 - Projektkurs
@@ -28,7 +28,7 @@ a) Sie können R als einfachen Taschenrechner nutzen. Geben Sie unten in das Tex
 ```{r "1_a",optional=TRUE}
 
 # enter your code here ...
-
+365 * 24
 ```
 
 Bei der richtigen Lösung erhalten Sie Punkte. Sie können nach oben Scrollen und auf den Knopf mit den Balken <i class="fa fa-tasks fa-fw"></i> oben rechts drücken, um zu sehen, wie viele Punkte Sie bereits haben. Sie können eine Aufgabe ohne Punktabzug beliebig oft versuchen.
@@ -42,10 +42,10 @@ Nutzen sie nun das Rechenzeichen für Potenzen `^` um der Variablen `b` den Wert
 ```{r "1_b_2",optional=FALSE}
 
 # enter your code here ...
-
+b <- 2^10
 
 # enter your code here ...
-
+b
 ```
 
 c) Speichern Sie in der Variable `x` die Summe von `a` und `b` und lassen Sie dann `x` anzeigen.
@@ -53,10 +53,10 @@ c) Speichern Sie in der Variable `x` die Summe von `a` und `b` und lassen Sie da
 ```{r "1_c",optional=TRUE}
 
 # enter your code here ...
-
+x <- a+b
 
 # enter your code here ...
-
+x
 ```
 
 
@@ -65,10 +65,10 @@ d) Suchen Sie auf Google mit dem Suchbegriff "r compute square root", mit welche
 ```{r "1_d",optional=TRUE}
 
 # enter your code here ...
-
+w <- sqrt(123456789)
 
 # enter your code here ...
-
+w
 ```
 
 e) Suchen Sie auf Google mit dem Suchbegriff "r compute absolute values", mit welcher Funktion man in R den Betrag berechnet. Berechnen Sie dann den Betrag aus (-13^3).
@@ -76,7 +76,7 @@ e) Suchen Sie auf Google mit dem Suchbegriff "r compute absolute values", mit we
 ```{r "1_e",optional=TRUE}
 
 # enter your code here ...
-
+abs(-13^3)
 ```
 
 
@@ -111,10 +111,10 @@ a) `P` Speichern sie in der Variablen `x` alle ganzen Zahlen zwischen 0 und 10 u
 ```{r "2_a"}
 
 # enter your code here ...
-
+x <- c(0:10)
 
 # enter your code here ...
-
+x
 ```
 
 b) `P` Lassen Sie einfach folgenden Code laufen, der zwei Rechnungen mit Vektoren illustriert, indem Sie `check` klicken.
@@ -135,7 +135,7 @@ Geben Sie hier die Ziffer Ihrer Antwort ein und fuehren Sie die Codezeile aus:
 ```{r "2_b_2",optional=TRUE}
 
 # enter your code here ...
-
+2
 ```
 
 c) `P` Speichern Sie nun in der Variable `y` einen neuen Vektor, der die Werte von `x` hoch `3` nimmt. Zeigen Sie `y` an.
@@ -143,10 +143,10 @@ c) `P` Speichern Sie nun in der Variable `y` einen neuen Vektor, der die Werte v
 ```{r "2_c"}
 
 # enter your code here ...
-
+y <- x^3
 
 # enter your code here ...
-
+y
 ```
 
 d) `P` Suchen Sie auf Google mit dem Suchbegriff "r replicate elements", mit welcher Funktion man in R einen Vektor mit einer Reihe identischer Elemente erstellt. Erzeugen Sie dann einen Vektor der 11 mal 3.14 enthält und speichern sie diesen als `r` ab. Zeigen Sie dann `r` an.
@@ -154,10 +154,10 @@ d) `P` Suchen Sie auf Google mit dem Suchbegriff "r replicate elements", mit wel
 ```{r "2_d"}
 
 # enter your code here ...
-
+r <- replicate(11, 3.14)
 
 # enter your code here ...
-
+r
 ```
 
 
@@ -173,7 +173,7 @@ e) `P` Wie sie sehen sind jeweils die Abstände zwischen den x-Werten sehr gross
 ```{r "2_e"}
 
 # enter your code here ...
-
+x <- seq(-1, 1, 0.1)
 ```
 
 Um zu sehen wie der Plot jetzt aussieht klicken Sie auf `check`:
@@ -202,7 +202,7 @@ Um zu sehen welchen Datentyp eine Variable oder ein Vektor beinhaltet können Si
 ```{r "2_f_3"}
 
 # enter your code here ...
-
+class(text)
 ```
 
 g) Wenn Sie versuchen numerische Operationen mit dem Vektor `text` durchzuführen wird Ihnen R schnell eine Fehlermeldung ausgeben.
@@ -218,17 +218,17 @@ Wandeln Sie `text` in einen numerischen Vekor um, speichern Sie diesen als `text
 ```{r "2_g_2",optional=TRUE}
 
 # enter your code here ...
-
+text_num <- as.numeric(text)
 
 # enter your code here ...
-
+text_num
 ```
 
 h) Suchen Sie auf Google mit dem Suchbegriff "r length", mit welcher Funktion man in R die Länge eines Objektes (z.B. eines Vektors) bestimmen kann. Bestimmen Sie anschließend die Länge von `names`.
 ```{r "2_h",optional=TRUE}
 
 # enter your code here ...
-
+length(names)
 ```
 
 i) Manchmal möchte man bestimmte Elemente eines Vektors selektieren. Hier sind ein paar Beispiele, wie man auf bestimmte Elemente zugreifen kann.
@@ -241,7 +241,7 @@ Selektieren Sie bitte nun die Elemente 2, 4 und 5 des Vektors `namen`:
 ```{r "2_i_2",optional=TRUE}
 
 # enter your code here ...
-
+namen[c(2,4,5)]
 ```
 Sie können mit einem ähnlichen Syntax auch einzelne Werte eines Vektors ändern oder hinzufügen. Hier sind ein paar Beispiele:
 ```{r "2_i_3"}
@@ -271,7 +271,7 @@ Geben Sie hier die Ziffer Ihrer Antwort ein und fuehren Sie die Codezeile aus:
 ```{r "2_i_4",optional=TRUE}
 
 # enter your code here ...
-
+3
 ```
 
 
@@ -293,7 +293,7 @@ Geben Sie hier die Ziffer Ihrer Antwort ein und fuehren Sie die Codezeile aus:
 ```{r "2_i_5",optional=TRUE}
 
 # enter your code here ...
-
+1
 ```
 
 
@@ -315,7 +315,7 @@ Geben Sie hier die Ziffer Ihrer Antwort ein und fuehren Sie die Codezeile aus:
 ```{r "2_i_6",optional=TRUE}
 
 # enter your code here ...
-
+4
 ```
 
 
@@ -346,10 +346,10 @@ Lassen Sie sich anschließend `z` anzeigen.
 ```{r "3_a"}
 
 # enter your code here ...
-
+z <- data.frame(Land=c("Brasilien","Deutschland","Frankreich","Mexiko","Suedkorea"),Kontinent=c("Am","Eur","Eur","Am","As"),Jahr=c(2018),BIP=c(2.14, 4.21,2.93,1.21,1.69),ID=c(1,2,3,4,5))
 
 # enter your code here ...
-
+z
 ```
 
 Außerdem kann man bestehende Datensätze in R einlesen. Sie finden unten ein Beispiel:
@@ -381,10 +381,10 @@ Lassen Sie sich anschließend die ersten 8 Zeilen anzeigen.
 ```{r "3_b"}
 
 # enter your code here ...
-
+dat <- read.csv("data/eu_macro_2017.csv", header =TRUE, dec = ".", sep = ",")
 
 # enter your code here ...
-
+head(dat, 8)
 ```
 
 Dies sind für das Jahr 2017 ausgewählte makroökonomische Daten der damaligen EU Mitglieder. (Quelle: <a href="https://ec.europa.eu/info/business-economy-euro/indicators-statistics/economic-databases/macro-economic-database-ameco_en">AMECO Datenbank der EU Kommission</a>)
@@ -403,10 +403,10 @@ c) Die Funktionen `nrow` und `ncol` liefern die Anzahl der Zeilen, bzw. Spalten 
 ```{r "3_c",optional=TRUE}
 
 # enter your code here ...
-
+n <- nrow(dat)
 
 # enter your code here ...
-
+n
 ```
 
 
@@ -415,7 +415,7 @@ d) `P` in der vorherigen Aufgabe haben Sie bereits ein Beispiel gesehen, wie Sie
 ```{r "3_d"}
 
 # enter your code here ...
-
+d <- head(dat, 3)
 ```
 
 e) `P` Spalten kann man in R auf viele unterschiedliche Arten auswählen. Hier sind 5 Codezeilen, von denen jede die Spalte `cntry` von `d` auswählt. Drücken Sie einfach nur "check".
@@ -435,7 +435,7 @@ Bevor wir zeigen, wie man direkt mit einem Data Frame arbeiten kann, möchten wi
 ```{r "3_e_2"}
 
 # enter your code here ...
-
+p <- dat$pop
 ```
 
 f) Häufig verwendete R Funktionen sind `mean`, `sum`, `max` und `min`. Sie sollen diese nun in den folgenden Aufgaben an der richtigen Stelle verwenden.
@@ -444,7 +444,7 @@ i) Berechnen Sie die gesamte Bevölkerung der EU28 in Mio. Menschen
 ```{r "3_f",optional=TRUE}
 
 # enter your code here ...
-
+sum(p)
 ```
 Hmm, über eine halbe Millarde Menschen. Gar nicht mal so klein die EU...
 
@@ -453,7 +453,7 @@ Und wieviel Mio Einwohner hat ein EU Land im Durchschnitt?
 ```{r "3_f_2",optional=TRUE}
 
 # enter your code here ...
-
+mean(p)
 ```
 Der Schnitt aller EU Länder ist also etwas mehr, als die Einwohnerzahl der Niederlande.
 
@@ -461,7 +461,7 @@ iii) Zeigen Sie die Anzahl der Einwohner (in Mio)  des größten EU28 Landes an.
 ```{r "3_f_3",optional=TRUE}
 
 # enter your code here ...
-
+max(p)
 ```
 Früher mit 80 Mio war es natürlich einfacher pro Kopf Werte im Kopf zu berechnen als mit 83 Mio. Na ja vielleicht legen wir ja noch um 17 Mio zu...
 
@@ -469,7 +469,7 @@ iv) Wievielfach mehr Einwohner hat das größte EU Land, als das kleinste? Berec
 ```{r "3_f_4",optional=TRUE}
 
 # enter your code here ...
-
+max(p) / min(p)
 ```
 Aber immerhin ist Malta immer noch mehr als doppelt so groß wie Ulm und Neu-Ulm zusammen!
 
@@ -477,13 +477,13 @@ g) Man kann sich alternativ auch eine sogenannte 5er-Characteristik bestehend au
 ```{r "3_g",optional=TRUE}
 
 # enter your code here ...
-
+summary(p)
 ```
 h) `summary()` funktioniert auch für den Datensatz im Ganzen. Lassen Sie sich die 5er-Characteristiken für den gesamten Datensatz `dat` ausgeben.
 ```{r "3_h",optional=TRUE}
 
 # enter your code here ...
-
+summary(dat)
 ```
 
 
@@ -513,13 +513,13 @@ Speichern Sie in der Variable `pop_share` den jeweiligen Anteil der Bevölkerung
 ```{r "4_a_2"}
 
 # enter your code here ...
-
+pop_share <- dat$pop / sum(dat$pop)
 ```
 Zeigen Sie den Bevölkerungsanteil Deutschlands in der EU
 ```{r "4_a_3",optional=TRUE}
 
 # enter your code here ...
-
+pop_share["DEU"]
 ```
 b) lapply kann eine sehr nützliche Funktion sein. Sie erlaubt es Funktionen (wie z.B. `sum()`, `median()` oder `class()`) auf ganze Spalten oder Zeilen eines Objektes anzuwenden. So können bspw. relativ einfach Spaltensummen berechnet werden. Im folgenden sehen Sie ein Beispiel für lapply:
 ```{r "4_b"}
@@ -535,16 +535,16 @@ Lassen Sie sich für jede Spalte vom Data Frame `z` den Mittelwert ausgeben und 
 ```{r "4_b_3",optional=TRUE}
 
 # enter your code here ...
-
+z_mean <- lapply(z, mean)
 
 # enter your code here ...
-
+z_mean
 ```
 c) Lassen Sie sich für jeden Kontinent in `z` das Minumum des BIP nach Kontinent ausgeben.
 ```{r "4_c",optional=TRUE}
 
 # enter your code here ...
-
+tapply(z$Kontinent, z$BIP, min)
 ```
 d) `P` Wir können den Bevölkerungsanteil, auch unserem Data Frame `dat` als neue Spalte hinzufügen. Lassen Sie hierfür einfach den folgenden Code laufen. Klicken Sie herifür `check`.
 ```{r "4_d",round.digits=3}
@@ -559,10 +559,10 @@ e) Fügen Sie nun dem Data Frame `dat` noch eine neue Spalte `gdp_share` hinzu, 
 ```{r "4_e",round.digits=3}
 
 # enter your code here ...
-
+dat$gdp_share <- dat$gdp / sum(dat$gdp) 
 
 # enter your code here ...
-
+head(dat, 6)
 ```
 
 
