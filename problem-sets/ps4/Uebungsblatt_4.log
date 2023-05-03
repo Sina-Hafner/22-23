@@ -1,0 +1,348 @@
+{"type":["init_ps"],"time":["2023-04-21 10:42:51"],"user":["Sina Hafner"],"umph":[1682066571.7046],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 10:42:51"],"user":["Sina Hafner"],"umph":[1682066571.7661],"ok":[true],"chunk":[1],"ex":[1],"e.ind":[0],"code":["library(stargazer)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 10:42:53"],"user":["Sina Hafner"],"umph":[1682066573.1257],"ok":[false],"chunk":[2],"ex":[1],"e.ind":[1],"code":["#____ <- read_csv(\"____\")\n\n# enter your code here ...\neu_makro <- read.csv(\"C:/Users/hafne/Documents/GitHub/22-23/problem-sets/ps4/data/EU_Makro.csv\")"],"message":["\nYou have not made a correct assignment to eu_makro in chunk 1_a."]}
+,
+{"type":["hint"],"time":["2023-04-21 10:43:26"],"user":["Sina Hafner"],"umph":[1682066606.3124],"ok":[true],"chunk":[2],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2023-04-21 10:44:06"],"user":["Sina Hafner"],"umph":[1682066646.1586],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 10:44:06"],"user":["Sina Hafner"],"umph":[1682066646.682],"ok":[true],"chunk":[2],"ex":[1],"e.ind":[0],"code":["#____ <- read_csv(\"____\")\n\n# enter your code here ...\neu_makro <- read_csv(\"C:/Users/hafne/Documents/GitHub/22-23/problem-sets/ps4/data/EU_Makro.csv\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 10:44:07"],"user":["Sina Hafner"],"umph":[1682066647.0786],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[0],"code":["eu_makro <- eu_makro %>%\n  mutate(debt_share_country_pro = debt_share_country * 100)\n  \ng1 <- eu_makro %>%\n  ggplot(aes(x = debt_share_country_pro, y = unempl)) + geom_point() + \n  xlab(\"Verschuldungsquote in %\") +\n  ylab(\"Arbeitslosenquote in %\")\ng1"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 10:44:07"],"user":["Sina Hafner"],"umph":[1682066647.1444],"ok":[true],"chunk":[4],"ex":[1],"e.ind":[0],"code":["#reg1 <- lm(___~debt_share_country_pro, data=___)\n#summary(___)\n\n# enter your code here ...\nreg1 <- lm(unempl~debt_share_country_pro, data=eu_makro)\n\n# enter your code here ...\nsummary(reg1)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 10:44:07"],"user":["Sina Hafner"],"umph":[1682066647.6905],"ok":[true],"chunk":[5],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\n6.895"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 10:44:07"],"user":["Sina Hafner"],"umph":[1682066647.7573],"ok":[true],"chunk":[6],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\ncoef(reg1)\n\n# enter your code here ...\nb0 <- reg1$coefficients[1]\nb1 <- reg1$coefficients[2]"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 10:44:07"],"user":["Sina Hafner"],"umph":[1682066647.7872],"ok":[false],"chunk":[7],"ex":[1],"e.ind":[0],"code":["g2 <- g1 + geom_abline(intercept=.PH_._,slope=.PH_._,colour=\".PH_._\")\n\n# enter your code here ...\n\ng2"],"message":["evaluation error in \n  g2 <- g1 + geom_abline(intercept = ___, slope = ___, colour = \"___\")\n  Error in geom_abline(intercept = ___, slope = ___, colour = \"___\"): object '___' not found\n"]}
+,
+{"type":["check_ps"],"time":["2023-04-21 10:48:17"],"user":["Sina Hafner"],"umph":[1682066897.4163],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 10:48:17"],"user":["Sina Hafner"],"umph":[1682066897.8636],"ok":[true],"chunk":[7],"ex":[1],"e.ind":[0],"code":["#g2 <- g1 + geom_abline(intercept=___,slope=___,colour=\"___\")\n\n# enter your code here ...\n\ng2 <- g1 + geom_abline(intercept=b0,slope=b1,colour=\"blue\")\n#intercept ist der Y-Achsenabschnitt, slope die Steigung\ng2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 10:48:17"],"user":["Sina Hafner"],"umph":[1682066897.8938],"ok":[false],"chunk":[8],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_g."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 10:56:32"],"user":["Sina Hafner"],"umph":[1682067392.7943],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 10:56:32"],"user":["Sina Hafner"],"umph":[1682067392.815],"ok":[true],"chunk":[8],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\ncor(eu_makro$unempl, eu_makro$debt_share_country_pro, use = \"pairwise.complete.obs\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 10:56:32"],"user":["Sina Hafner"],"umph":[1682067392.9398],"ok":[true],"chunk":[9],"ex":[2],"e.ind":[0],"code":["set.seed(1)\nT <-  20 # Zahl der Beobachtungen\nbeta0 <- 10; beta1 <- 2;\nu <- rnorm(T,0,3) # Normalverteilte Stoergroesse\nu\nx <- runif(T,0,4) # gleichverteilte x zwischen 0 und 4\nx\ny <- beta0 + beta1*x + u\ny"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 10:56:32"],"user":["Sina Hafner"],"umph":[1682067392.9529],"ok":[false],"chunk":[10],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_a_2."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 10:57:58"],"user":["Sina Hafner"],"umph":[1682067478.4408],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 10:57:58"],"user":["Sina Hafner"],"umph":[1682067478.4593],"ok":[false],"chunk":[10],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n1"],"message":["\nYou have not yet entered all correct commands in chunk 2_a_2."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 10:58:11"],"user":["Sina Hafner"],"umph":[1682067491.1801],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 10:58:11"],"user":["Sina Hafner"],"umph":[1682067491.2005],"ok":[true],"chunk":[10],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\n2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 10:58:11"],"user":["Sina Hafner"],"umph":[1682067491.2128],"ok":[false],"chunk":[11],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_a_3."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 10:59:07"],"user":["Sina Hafner"],"umph":[1682067547.7793],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 10:59:07"],"user":["Sina Hafner"],"umph":[1682067547.801],"ok":[true],"chunk":[11],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nlm(y ~ x)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 10:59:07"],"user":["Sina Hafner"],"umph":[1682067547.8137],"ok":[true],"chunk":[12],"ex":[2],"e.ind":[0],"code":["simulate.and.estimate <- function(T=20, beta0 = 10, beta1=2) {\n  u <- rnorm(T,0,3) # Normalverteilte Stoergroesse\n  x <- runif(T,0,4) # gleichverteilte x zwischen 0 und 4\n  y <- beta0 + beta1*x + u\n  # Anmerkung lm.fit lauft schneller als\n  # lm, hat aber keinen so schoenen Syntax\n  reg <- lm.fit(x=cbind(1,x),y=y)\n  coef(reg)[2]\n}\nsimulate.and.estimate()\nsimulate.and.estimate()\nsimulate.and.estimate()"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 10:59:07"],"user":["Sina Hafner"],"umph":[1682067547.8299],"ok":[false],"chunk":[13],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_b_2."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 11:13:52"],"user":["Sina Hafner"],"umph":[1682068432.6059],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:13:52"],"user":["Sina Hafner"],"umph":[1682068432.6337],"ok":[true],"chunk":[13],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\n2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:13:52"],"user":["Sina Hafner"],"umph":[1682068432.6446],"ok":[false],"chunk":[14],"ex":[2],"e.ind":[0],"code":[".PH_.__ <- .PH_.__(.PH_.__,simulate.and.estimate())\n\n# enter your code here ...\n"],"message":["evaluation error in \n  ____ <- ____(____, simulate.and.estimate())\n  Error in ____(____, simulate.and.estimate()): could not find function \"____\"\n"]}
+,
+{"type":["check_ps"],"time":["2023-04-21 11:15:19"],"user":["Sina Hafner"],"umph":[1682068519.2305],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:15:19"],"user":["Sina Hafner"],"umph":[1682068519.7983],"ok":[true],"chunk":[14],"ex":[2],"e.ind":[0],"code":["#____ <- ____(____,simulate.and.estimate())\n\n# enter your code here ...\nsim.beta1 <- replicate(5000,simulate.and.estimate())"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:15:19"],"user":["Sina Hafner"],"umph":[1682068519.8237],"ok":[false],"chunk":[15],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_c_2."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 11:16:44"],"user":["Sina Hafner"],"umph":[1682068604.7199],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:16:44"],"user":["Sina Hafner"],"umph":[1682068604.7727],"ok":[false],"chunk":[15],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nhist(sim.beta1)"],"message":["evaluation error in \n  hist(sim.beta1)\n  Error in plot.new(): figure margins too large\n"]}
+,
+{"type":["check_ps"],"time":["2023-04-21 11:18:15"],"user":["Sina Hafner"],"umph":[1682068695.5261],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:18:15"],"user":["Sina Hafner"],"umph":[1682068695.736],"ok":[true],"chunk":[16],"ex":[2],"e.ind":[0],"code":["ggplot(mapping=aes(x=sim.beta1)) + geom_density(fill=\"blue\", alpha=0.5) + geom_vline(xintercept = 2)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:18:15"],"user":["Sina Hafner"],"umph":[1682068695.7509],"ok":[true],"chunk":[17],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nsd(sim.beta1)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:18:15"],"user":["Sina Hafner"],"umph":[1682068695.7742],"ok":[true],"chunk":[18],"ex":[2],"e.ind":[0],"code":["reg1 <-  lm(y~x)\n\n# enter your code here ...\nsummary(reg1)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:18:15"],"user":["Sina Hafner"],"umph":[1682068695.7888],"ok":[false],"chunk":[19],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n\n\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_f."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 11:20:55"],"user":["Sina Hafner"],"umph":[1682068855.252],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:20:55"],"user":["Sina Hafner"],"umph":[1682068855.2792],"ok":[true],"chunk":[19],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nconfint(reg1, level = 0.95)\n\n# enter your code here ...\nconfint(reg1, level = 0.99)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:20:56"],"user":["Sina Hafner"],"umph":[1682068856.8165],"ok":[true],"chunk":[20],"ex":[2],"e.ind":[0],"code":["ggplot(mapping = aes(x=x,y=y)) + geom_point()+ geom_smooth(method=\"lm\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:20:57"],"user":["Sina Hafner"],"umph":[1682068857.1411],"ok":[true],"chunk":[21],"ex":[3],"e.ind":[0],"code":["eu_makro <- read_csv(\"./data/EU_Makro.csv\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:20:57"],"user":["Sina Hafner"],"umph":[1682068857.2001],"ok":[true],"chunk":[22],"ex":[3],"e.ind":[0],"code":["eu_makro <-  eu_makro %>%\n  group_by(country) %>%\n  arrange(year) %>%\n  mutate(gdp_growth = 100*(gdp - lag(gdp)) / gdp ) %>%\n  ungroup()"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:20:57"],"user":["Sina Hafner"],"umph":[1682068857.2134],"ok":[false],"chunk":[23],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to dat in chunk 3_a_3."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 11:27:00"],"user":["Sina Hafner"],"umph":[1682069220.4578],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:27:00"],"user":["Sina Hafner"],"umph":[1682069220.5159],"ok":[false],"chunk":[23],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nfilter(eu_makro, country %in% c(\"Deutschland\", \"Frankreich\", \"Niederlande\"))\n#filter(eu_makro$country == \"Deutschland\" | \"Frankreich\" | \"Niederlande\")"],"message":["\nYou have not yet made an assignment to dat in chunk 3_a_3."]}
+,
+{"type":["hint"],"time":["2023-04-21 11:27:04"],"user":["Sina Hafner"],"umph":[1682069224.3102],"ok":[true],"chunk":[23],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2023-04-21 11:28:55"],"user":["Sina Hafner"],"umph":[1682069335.5083],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:28:55"],"user":["Sina Hafner"],"umph":[1682069335.6067],"ok":[false],"chunk":[23],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nfilter(eu_makro, country %in% c(\"Germany\", \"France\", \"Netherlands\"))"],"message":["\nYou have not yet made an assignment to dat in chunk 3_a_3."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 11:32:36"],"user":["Sina Hafner"],"umph":[1682069556.1687],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:32:36"],"user":["Sina Hafner"],"umph":[1682069556.2125],"ok":[true],"chunk":[23],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\ndat <- filter(eu_makro, country %in% c(\"Germany\", \"France\", \"Netherlands\"))"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:32:36"],"user":["Sina Hafner"],"umph":[1682069556.2348],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nreg1 <- lm(dat$debt_share_country ~ dat$unempl)\n\n# enter your code here ...\nsummary(reg1)"],"message":["\nYou have not made a correct assignment to reg1 in chunk 3_a_4."]}
+,
+{"type":["hint"],"time":["2023-04-21 11:32:51"],"user":["Sina Hafner"],"umph":[1682069571.6407],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2023-04-21 11:36:55"],"user":["Sina Hafner"],"umph":[1682069815.3954],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:36:55"],"user":["Sina Hafner"],"umph":[1682069815.4176],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nreg1 <- lm(dat$gdp_growth ~ dat$unempl)\n\n# enter your code here ...\nsummary(reg1)"],"message":["\nYou have not made a correct assignment to reg1 in chunk 3_a_4."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 11:37:57"],"user":["Sina Hafner"],"umph":[1682069877.2745],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:37:57"],"user":["Sina Hafner"],"umph":[1682069877.2987],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nreg1 <- lm(dat$gdp_growth ~ dat$unempl)\n\n# enter your code here ...\nsummary(reg1)"],"message":["\nYou have not made a correct assignment to reg1 in chunk 3_a_4."]}
+,
+{"type":["hint"],"time":["2023-04-21 11:38:00"],"user":["Sina Hafner"],"umph":[1682069880.2259],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2023-04-21 11:38:53"],"user":["Sina Hafner"],"umph":[1682069933.4962],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2023-04-21 11:38:55"],"user":["Sina Hafner"],"umph":[1682069935.4398],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:38:55"],"user":["Sina Hafner"],"umph":[1682069935.4644],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nreg1 <- lm(dat$gdp_growth ~ dat$unempl)\n\n# enter your code here ...\nsummary(reg1)"],"message":["\nYou have not made a correct assignment to reg1 in chunk 3_a_4."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 11:40:54"],"user":["Sina Hafner"],"umph":[1682070054.3163],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:40:54"],"user":["Sina Hafner"],"umph":[1682070054.3403],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nreg1 <- lm(dat$unempl ~ dat$gdp_growth)\n\n# enter your code here ...\nsummary(reg1)"],"message":["\nYou have not made a correct assignment to reg1 in chunk 3_a_4."]}
+,
+{"type":["hint"],"time":["2023-04-21 11:41:00"],"user":["Sina Hafner"],"umph":[1682070060.6222],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2023-04-21 11:41:09"],"user":["Sina Hafner"],"umph":[1682070069.1885],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:41:09"],"user":["Sina Hafner"],"umph":[1682070069.2141],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nreg1 <- lm(dat$unempl ~ dat$gdp_growth)\n\n# enter your code here ...\n"],"message":["\nYou have not made a correct assignment to reg1 in chunk 3_a_4."]}
+,
+{"type":["hint"],"time":["2023-04-21 11:41:11"],"user":["Sina Hafner"],"umph":[1682070071.9199],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2023-04-21 11:41:31"],"user":["Sina Hafner"],"umph":[1682070091.4801],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:41:31"],"user":["Sina Hafner"],"umph":[1682070091.5065],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nreg1 <- lm(dat$unempl ~ dat$gdp_growth)\n\n# enter your code here ...\nsummary(reg1)"],"message":["\nYou have not made a correct assignment to reg1 in chunk 3_a_4."]}
+,
+{"type":["hint"],"time":["2023-04-21 11:41:39"],"user":["Sina Hafner"],"umph":[1682070099.6807],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2023-04-21 11:44:46"],"user":["Sina Hafner"],"umph":[1682070286.0561],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:44:46"],"user":["Sina Hafner"],"umph":[1682070286.1536],"ok":[true],"chunk":[23],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\ndat <- filter(eu_makro, country %in% c(\"Germany\", \"France\", \"Netherlands\"))\ndat"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:44:46"],"user":["Sina Hafner"],"umph":[1682070286.1623],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to reg1 in chunk 3_a_4."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 11:45:44"],"user":["Sina Hafner"],"umph":[1682070344.6057],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:45:44"],"user":["Sina Hafner"],"umph":[1682070344.6312],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nreg1 <- lm(dat$gdp_growth ~ dat$unempl)\n\n# enter your code here ...\nsummary(reg1)"],"message":["\nYou have not made a correct assignment to reg1 in chunk 3_a_4."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 11:46:49"],"user":["Sina Hafner"],"umph":[1682070409.0281],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:46:49"],"user":["Sina Hafner"],"umph":[1682070409.0667],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nreg1 <- lm(dat$unempl ~ dat$gdp_growth)\n\n# enter your code here ...\nsummary(reg1)"],"message":["\nYou have not made a correct assignment to reg1 in chunk 3_a_4."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 11:49:22"],"user":["Sina Hafner"],"umph":[1682070562.6928],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:49:22"],"user":["Sina Hafner"],"umph":[1682070562.7158],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nreg1 <- lm(dat$unempl ~ dat$gdp_growth)\n\n# enter your code here ...\nsummary(reg1)"],"message":["\nYou have not made a correct assignment to reg1 in chunk 3_a_4."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 11:50:02"],"user":["Sina Hafner"],"umph":[1682070602.7736],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 11:50:02"],"user":["Sina Hafner"],"umph":[1682070602.7889],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n#reg1 <- lm(dat$unempl ~ dat$gdp_growth)\n\n# enter your code here ...\n#summary(reg1)"],"message":["\nYou have not yet made an assignment to reg1 in chunk 3_a_4."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 12:02:34"],"user":["Sina Hafner"],"umph":[1682071354.8509],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:02:34"],"user":["Sina Hafner"],"umph":[1682071354.8952],"ok":[true],"chunk":[31],"ex":[4],"e.ind":[0],"code":["pwt <- readRDS(\"./data/pwt_2014.rds\")\nhead(pwt)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:02:34"],"user":["Sina Hafner"],"umph":[1682071354.9119],"ok":[false],"chunk":[32],"ex":[4],"e.ind":[1],"code":["\n# enter your code here ...\nreg1 <- lm(pwt$bip ~ pwt$k)\nsummary(reg1)"],"message":["\nYou have not made a correct assignment to reg1 in chunk 4_b."]}
+,
+{"type":["hint"],"time":["2023-04-21 12:02:49"],"user":["Sina Hafner"],"umph":[1682071369.5392],"ok":[true],"chunk":[32],"ex":[4],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2023-04-21 12:03:33"],"user":["Sina Hafner"],"umph":[1682071413.0212],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:03:33"],"user":["Sina Hafner"],"umph":[1682071413.0474],"ok":[true],"chunk":[32],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\nreg1 <- lm(bip ~ k, data= pwt)\nsummary(reg1)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:03:33"],"user":["Sina Hafner"],"umph":[1682071413.0637],"ok":[true],"chunk":[33],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\n2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:03:33"],"user":["Sina Hafner"],"umph":[1682071413.2671],"ok":[true],"chunk":[34],"ex":[4],"e.ind":[0],"code":["ggplot(pwt,aes(x=k,y=bip, label=isocode)) + geom_text() + geom_smooth(method=\"lm\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:03:33"],"user":["Sina Hafner"],"umph":[1682071413.2796],"ok":[false],"chunk":[35],"ex":[4],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to pwt in chunk 4_d."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 12:04:04"],"user":["Sina Hafner"],"umph":[1682071444.3037],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:04:04"],"user":["Sina Hafner"],"umph":[1682071444.3267],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nreg1 <- lm(unempl ~ gdp_growth, data= dat)\n\n# enter your code here ...\nsummary(reg1)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:04:04"],"user":["Sina Hafner"],"umph":[1682071444.3395],"ok":[false],"chunk":[25],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n3"],"message":["\nYou have not yet entered all correct commands in chunk 3_a_5."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 12:04:24"],"user":["Sina Hafner"],"umph":[1682071464.7679],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:04:24"],"user":["Sina Hafner"],"umph":[1682071464.7848],"ok":[true],"chunk":[25],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n1"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:04:24"],"user":["Sina Hafner"],"umph":[1682071464.8001],"ok":[false],"chunk":[26],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 3_b."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 12:06:39"],"user":["Sina Hafner"],"umph":[1682071599.6209],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:06:39"],"user":["Sina Hafner"],"umph":[1682071599.6396],"ok":[true],"chunk":[26],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n3"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:06:39"],"user":["Sina Hafner"],"umph":[1682071599.6532],"ok":[false],"chunk":[27],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 3_b_2."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 12:07:06"],"user":["Sina Hafner"],"umph":[1682071626.5795],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:07:06"],"user":["Sina Hafner"],"umph":[1682071626.6211],"ok":[false],"chunk":[27],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n1"],"message":["\nYou have not yet entered all correct commands in chunk 3_b_2."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 12:07:36"],"user":["Sina Hafner"],"umph":[1682071656.7949],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:07:36"],"user":["Sina Hafner"],"umph":[1682071656.8194],"ok":[false],"chunk":[27],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nc(1)"],"message":["\nYou have not yet entered all correct commands in chunk 3_b_2."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 12:07:49"],"user":["Sina Hafner"],"umph":[1682071669.4973],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:07:49"],"user":["Sina Hafner"],"umph":[1682071669.5168],"ok":[false],"chunk":[27],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\nc(1,2)"],"message":["\nYou have not yet entered all correct commands in chunk 3_b_2."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 12:08:28"],"user":["Sina Hafner"],"umph":[1682071708.2317],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:08:28"],"user":["Sina Hafner"],"umph":[1682071708.2505],"ok":[true],"chunk":[27],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nc(3)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:08:28"],"user":["Sina Hafner"],"umph":[1682071708.4907],"ok":[true],"chunk":[28],"ex":[3],"e.ind":[0],"code":["reg2 <- lm(unempl~gdp_growth, data=eu_makro)\nstargazer(type = \"text\", reg2 ,  single.row = TRUE, header = FALSE, digits=2)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:08:28"],"user":["Sina Hafner"],"umph":[1682071708.5095],"ok":[false],"chunk":[29],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 3_c_2."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 12:18:44"],"user":["Sina Hafner"],"umph":[1682072324.8203],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:18:44"],"user":["Sina Hafner"],"umph":[1682072324.8526],"ok":[true],"chunk":[29],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n3"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:18:44"],"user":["Sina Hafner"],"umph":[1682072324.8843],"ok":[false],"chunk":[30],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 3_d."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 12:19:57"],"user":["Sina Hafner"],"umph":[1682072397.3234],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:19:57"],"user":["Sina Hafner"],"umph":[1682072397.3565],"ok":[false],"chunk":[30],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n3"],"message":["\nYou have not yet entered all correct commands in chunk 3_d."]}
+,
+{"type":["hint"],"time":["2023-04-21 12:20:57"],"user":["Sina Hafner"],"umph":[1682072457.2424],"ok":[true],"chunk":[30],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2023-04-21 12:21:16"],"user":["Sina Hafner"],"umph":[1682072476.3823],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:21:16"],"user":["Sina Hafner"],"umph":[1682072476.4198],"ok":[true],"chunk":[30],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n4"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:21:16"],"user":["Sina Hafner"],"umph":[1682072476.4726],"ok":[false],"chunk":[15],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nhist(sim.beta1)"],"message":["evaluation error in \n  hist(sim.beta1)\n  Error in plot.new(): figure margins too large\n"]}
+,
+{"type":["check_ps"],"time":["2023-04-21 12:24:45"],"user":["Sina Hafner"],"umph":[1682072685.6382],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:24:45"],"user":["Sina Hafner"],"umph":[1682072685.6945],"ok":[true],"chunk":[30],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n4\n\n#Die Standardabweichung der erklärenden Variable gibt an, wie stark die Werte der erklärenden Variable um ihren Mittelwert streuen.\n#Der Standardfehler des Koeffizienten in einer linearen Regression gibt hingegen an, wie genau der geschätzte Koeffizient den tatsächlichen #Koeffizienten in der Population schätzt. "],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:24:45"],"user":["Sina Hafner"],"umph":[1682072685.7245],"ok":[false],"chunk":[15],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nhist(sim.beta1)"],"message":["evaluation error in \n  hist(sim.beta1)\n  Error in plot.new(): figure margins too large\n"]}
+,
+{"type":["check_ps"],"time":["2023-04-21 12:27:57"],"user":["Sina Hafner"],"umph":[1682072877.9649],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:27:58"],"user":["Sina Hafner"],"umph":[1682072878.0014],"ok":[true],"chunk":[35],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\npwt <- pwt %>%\n  mutate(log_bip = log(bip))%>%\n  mutate(log_k = log(k))"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:27:58"],"user":["Sina Hafner"],"umph":[1682072878.4281],"ok":[true],"chunk":[36],"ex":[4],"e.ind":[0],"code":["ggplot(pwt,aes(x=log_k,y=log_bip, label=isocode)) + geom_text() + geom_smooth(method=\"lm\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:27:58"],"user":["Sina Hafner"],"umph":[1682072878.4469],"ok":[false],"chunk":[37],"ex":[4],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to reg2 in chunk 4_e."]}
+,
+{"type":["check_ps"],"time":["2023-04-21 12:30:28"],"user":["Sina Hafner"],"umph":[1682073028.3901],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:30:28"],"user":["Sina Hafner"],"umph":[1682073028.4444],"ok":[true],"chunk":[37],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\nreg2 <- lm(log_bip ~ log_k, data = pwt)\nsummary(reg2)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:30:28"],"user":["Sina Hafner"],"umph":[1682073028.4707],"ok":[true],"chunk":[38],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\n3"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:30:28"],"user":["Sina Hafner"],"umph":[1682073028.5755],"ok":[false],"chunk":[15],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nhist(sim.beta1)"],"message":["evaluation error in \n  hist(sim.beta1)\n  Error in plot.new(): figure margins too large\n"]}
+,
+{"type":["check_ps"],"time":["2023-04-21 12:31:50"],"user":["Sina Hafner"],"umph":[1682073110.1815],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:31:50"],"user":["Sina Hafner"],"umph":[1682073110.2171],"ok":[false],"chunk":[15],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nhist(sim.beta1)"],"message":["evaluation error in \n  hist(sim.beta1)\n  Error in plot.new(): figure margins too large\n"]}
+,
+{"type":["grade_ps"],"time":["2023-04-21 12:32:01"],"user":["Sina Hafner"],"umph":[1682073121.8069],"ok":[true]}
+,
+{"type":["init_ps"],"time":["2023-04-21 12:32:01"],"user":["Sina Hafner"],"umph":[1682073121.8412],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:01"],"user":["Sina Hafner"],"umph":[1682073121.8698],"ok":[true],"chunk":[1],"ex":[1],"e.ind":[0],"code":["library(stargazer)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:02"],"user":["Sina Hafner"],"umph":[1682073122.3508],"ok":[true],"chunk":[2],"ex":[1],"e.ind":[0],"code":["#____ <- read_csv(\"____\")\n\n# enter your code here ...\neu_makro <- read_csv(\"C:/Users/hafne/Documents/GitHub/22-23/problem-sets/ps4/data/EU_Makro.csv\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:02"],"user":["Sina Hafner"],"umph":[1682073122.6888],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[0],"code":["eu_makro <- eu_makro %>%\n  mutate(debt_share_country_pro = debt_share_country * 100)\n  \ng1 <- eu_makro %>%\n  ggplot(aes(x = debt_share_country_pro, y = unempl)) + geom_point() + \n  xlab(\"Verschuldungsquote in %\") +\n  ylab(\"Arbeitslosenquote in %\")\ng1"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:02"],"user":["Sina Hafner"],"umph":[1682073122.7319],"ok":[true],"chunk":[4],"ex":[1],"e.ind":[0],"code":["#reg1 <- lm(___~debt_share_country_pro, data=___)\n#summary(___)\n\n# enter your code here ...\nreg1 <- lm(unempl~debt_share_country_pro, data=eu_makro)\n\n# enter your code here ...\nsummary(reg1)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:02"],"user":["Sina Hafner"],"umph":[1682073122.7512],"ok":[true],"chunk":[5],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\n6.895"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:02"],"user":["Sina Hafner"],"umph":[1682073122.7787],"ok":[true],"chunk":[6],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\ncoef(reg1)\n\n# enter your code here ...\nb0 <- reg1$coefficients[1]\nb1 <- reg1$coefficients[2]"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:03"],"user":["Sina Hafner"],"umph":[1682073123.5035],"ok":[true],"chunk":[7],"ex":[1],"e.ind":[0],"code":["#g2 <- g1 + geom_abline(intercept=___,slope=___,colour=\"___\")\n\n# enter your code here ...\n\ng2 <- g1 + geom_abline(intercept=b0,slope=b1,colour=\"blue\")\n#intercept ist der Y-Achsenabschnitt, slope die Steigung\ng2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:03"],"user":["Sina Hafner"],"umph":[1682073123.5269],"ok":[true],"chunk":[8],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\ncor(eu_makro$unempl, eu_makro$debt_share_country_pro, use = \"pairwise.complete.obs\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:03"],"user":["Sina Hafner"],"umph":[1682073123.9671],"ok":[true],"chunk":[9],"ex":[2],"e.ind":[0],"code":["set.seed(1)\nT <-  20 # Zahl der Beobachtungen\nbeta0 <- 10; beta1 <- 2;\nu <- rnorm(T,0,3) # Normalverteilte Stoergroesse\nu\nx <- runif(T,0,4) # gleichverteilte x zwischen 0 und 4\nx\ny <- beta0 + beta1*x + u\ny"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:03"],"user":["Sina Hafner"],"umph":[1682073123.9876],"ok":[true],"chunk":[10],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\n2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:04"],"user":["Sina Hafner"],"umph":[1682073124.0161],"ok":[true],"chunk":[11],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nlm(y ~ x)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:04"],"user":["Sina Hafner"],"umph":[1682073124.0332],"ok":[true],"chunk":[12],"ex":[2],"e.ind":[0],"code":["simulate.and.estimate <- function(T=20, beta0 = 10, beta1=2) {\n  u <- rnorm(T,0,3) # Normalverteilte Stoergroesse\n  x <- runif(T,0,4) # gleichverteilte x zwischen 0 und 4\n  y <- beta0 + beta1*x + u\n  # Anmerkung lm.fit lauft schneller als\n  # lm, hat aber keinen so schoenen Syntax\n  reg <- lm.fit(x=cbind(1,x),y=y)\n  coef(reg)[2]\n}\nsimulate.and.estimate()\nsimulate.and.estimate()\nsimulate.and.estimate()"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:04"],"user":["Sina Hafner"],"umph":[1682073124.0479],"ok":[true],"chunk":[13],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\n2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:04"],"user":["Sina Hafner"],"umph":[1682073124.6651],"ok":[true],"chunk":[14],"ex":[2],"e.ind":[0],"code":["#____ <- ____(____,simulate.and.estimate())\n\n# enter your code here ...\nsim.beta1 <- replicate(5000,simulate.and.estimate())"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:04"],"user":["Sina Hafner"],"umph":[1682073124.6835],"ok":[false],"chunk":[15],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nhist(sim.beta1)"],"message":["evaluation error in \n  hist(sim.beta1)\n  Error in plot.new(): figure margins too large\n"]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:04"],"user":["Sina Hafner"],"umph":[1682073124.9601],"ok":[true],"chunk":[21],"ex":[3],"e.ind":[0],"code":["eu_makro <- read_csv(\"./data/EU_Makro.csv\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:05"],"user":["Sina Hafner"],"umph":[1682073125.0263],"ok":[true],"chunk":[22],"ex":[3],"e.ind":[0],"code":["eu_makro <-  eu_makro %>%\n  group_by(country) %>%\n  arrange(year) %>%\n  mutate(gdp_growth = 100*(gdp - lag(gdp)) / gdp ) %>%\n  ungroup()"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:05"],"user":["Sina Hafner"],"umph":[1682073125.139],"ok":[true],"chunk":[23],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\ndat <- filter(eu_makro, country %in% c(\"Germany\", \"France\", \"Netherlands\"))\ndat"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:05"],"user":["Sina Hafner"],"umph":[1682073125.165],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nreg1 <- lm(unempl ~ gdp_growth, data= dat)\n\n# enter your code here ...\nsummary(reg1)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:05"],"user":["Sina Hafner"],"umph":[1682073125.1817],"ok":[true],"chunk":[25],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n1"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:05"],"user":["Sina Hafner"],"umph":[1682073125.1966],"ok":[true],"chunk":[26],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n3"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:05"],"user":["Sina Hafner"],"umph":[1682073125.2112],"ok":[true],"chunk":[27],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\nc(3)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:05"],"user":["Sina Hafner"],"umph":[1682073125.5069],"ok":[true],"chunk":[28],"ex":[3],"e.ind":[0],"code":["reg2 <- lm(unempl~gdp_growth, data=eu_makro)\nstargazer(type = \"text\", reg2 ,  single.row = TRUE, header = FALSE, digits=2)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:05"],"user":["Sina Hafner"],"umph":[1682073125.5225],"ok":[true],"chunk":[29],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n3"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:05"],"user":["Sina Hafner"],"umph":[1682073125.5377],"ok":[true],"chunk":[30],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n4\n\n#Die Standardabweichung der erklärenden Variable gibt an, wie stark die Werte der erklärenden Variable um ihren Mittelwert streuen.\n#Der Standardfehler des Koeffizienten in einer linearen Regression gibt hingegen an, wie genau der geschätzte Koeffizient den tatsächlichen #Koeffizienten in der Population schätzt. "],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:05"],"user":["Sina Hafner"],"umph":[1682073125.5832],"ok":[true],"chunk":[31],"ex":[4],"e.ind":[0],"code":["pwt <- readRDS(\"./data/pwt_2014.rds\")\nhead(pwt)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:05"],"user":["Sina Hafner"],"umph":[1682073125.6101],"ok":[true],"chunk":[32],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\nreg1 <- lm(bip ~ k, data= pwt)\nsummary(reg1)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:05"],"user":["Sina Hafner"],"umph":[1682073125.6257],"ok":[true],"chunk":[33],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\n2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:05"],"user":["Sina Hafner"],"umph":[1682073125.9582],"ok":[true],"chunk":[34],"ex":[4],"e.ind":[0],"code":["ggplot(pwt,aes(x=k,y=bip, label=isocode)) + geom_text() + geom_smooth(method=\"lm\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:06"],"user":["Sina Hafner"],"umph":[1682073126.0069],"ok":[true],"chunk":[35],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\npwt <- pwt %>%\n  mutate(log_bip = log(bip))%>%\n  mutate(log_k = log(k))"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:06"],"user":["Sina Hafner"],"umph":[1682073126.4874],"ok":[true],"chunk":[36],"ex":[4],"e.ind":[0],"code":["ggplot(pwt,aes(x=log_k,y=log_bip, label=isocode)) + geom_text() + geom_smooth(method=\"lm\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:06"],"user":["Sina Hafner"],"umph":[1682073126.5139],"ok":[true],"chunk":[37],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\nreg2 <- lm(log_bip ~ log_k, data = pwt)\nsummary(reg2)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:32:06"],"user":["Sina Hafner"],"umph":[1682073126.5317],"ok":[true],"chunk":[38],"ex":[4],"e.ind":[0],"code":["\n# enter your code here ...\n3"],"message":[""]}
+,
+{"type":["check_ps"],"time":["2023-04-21 12:33:41"],"user":["Sina Hafner"],"umph":[1682073221.3362],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:33:41"],"user":["Sina Hafner"],"umph":[1682073221.6755],"ok":[true],"chunk":[16],"ex":[2],"e.ind":[0],"code":["ggplot(mapping=aes(x=sim.beta1)) + geom_density(fill=\"blue\", alpha=0.5) + geom_vline(xintercept = 2)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:33:41"],"user":["Sina Hafner"],"umph":[1682073221.6959],"ok":[true],"chunk":[17],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nsd(sim.beta1)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:33:41"],"user":["Sina Hafner"],"umph":[1682073221.7211],"ok":[true],"chunk":[18],"ex":[2],"e.ind":[0],"code":["reg1 <-  lm(y~x)\n\n# enter your code here ...\nsummary(reg1)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:33:41"],"user":["Sina Hafner"],"umph":[1682073221.7467],"ok":[true],"chunk":[19],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\nconfint(reg1, level = 0.95)\n\n# enter your code here ...\nconfint(reg1, level = 0.99)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2023-04-21 12:33:42"],"user":["Sina Hafner"],"umph":[1682073222.1096],"ok":[true],"chunk":[20],"ex":[2],"e.ind":[0],"code":["ggplot(mapping = aes(x=x,y=y)) + geom_point()+ geom_smooth(method=\"lm\")"],"message":[""]}
+,
